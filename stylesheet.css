@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  max-height: 100% !important;
+}
+
+#titleHeader,
+.titleHeader {
+  display: none;
+}
+
+#paymentSummary,
+.paymentSummary {
+  display: none;
+}
+
+#addCardForm {
+  margin: 0;
+  overflow: auto !important;
+}
+
+#walletSelection {
+  border: 0;
+  background: none;
+}
+
+.instrument .content,
+.instrument .contentSimplified {
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.instrumentPopupContent,
+.instrument:not(.saved) .content {
+  margin: 0;
+  padding: 20px;
+  background: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.instrument.active:not(.saved) {
+  background: none;
+}
+
+.walletHeader {
+  display: none;
+}
+
+.cardLogoHolder {
+  margin-bottom: 20px;
+}
+
+.cardLogoHolder .cardLogo {
+  height: 26px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.instrumentPopupHeader {
+  background: none;
+  border: 0;
+  padding: 20px 20px 0;
+}
+
+.instrumentInfoHolder .expDate,
+.instrumentInfoHolder .giftCardBalance {
+  display: none;
+}
+
+.instrumentInfoHolder .instrumentLogoHolder {
+  margin-bottom: 10px;
+}
+
+.instrumentInfoHolder .instrumentLogoHolder img {
+  height: 26px;
+}
+
+.inputContainer,
+.holder.cardCvCHolder {
+  background: none;
+  border: 0;
+  padding: 0;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.inputContainer.active,
+.inputContainer.activesimulate {
+  border: 0;
+}
+
+.inputContainer .labelContainer {
+  position: initial;
+  margin: 0 0 8px !important;
+}
+
+.inputContainer.valid::after {
+  right: 10px;
+  top: 37px;
+}
+
+.inputContainer.error::after,
+.inputContainer.error::before {
+  right: 10px;
+  top: 40px;
+}
+
+.inputContainer label {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 1px;
+}
+
+.inputContainer label.placeHolderLabel {
+  display: none;
+}
+
+.inputContainer input,
+.inputContainer.filled input,
+.instrumentInfoHolder .instrumentNumber {
+  display: block;
+  border: 0.5px solid #b7afa2;
+  border-radius: 0;
+  padding: 10px;
+  height: 40px;
+  line-height: 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #231f20;
+}
+
+.instrumentInfoHolder .instrumentNumber {
+  background: #f3f3f3;
+  color: #6d6d6d;
+}
+
+.cardCvCHolder .cvcInfoLink {
+  display: none;
+}
+
+.recaptchaContainer {
+  margin-top: 4px;
+}
+
+
+#accordionButtonWide
+.accordionButtonWide {
+  width: 100%;
+  border: 0;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.14);
+  padding: 15px 0 35px 0 !important;
+}
+
+.mobileclose, .dialogBox .buttonHolder .commandButton,
+.dialogBox .buttonHolder .commandButton:hover,
+.dialogBox .buttonContainer .button, 
+.dialogBox .buttonContainer .button:hover, 
+.dialogBox .mobileclose.commandButton {
+background-color: #00703c;
+color: white;
+text-transform: uppercase;
+text-decoration: none;
+z-index: 99999;
+border-radius: 22px;
+font-weight: bold;
+max-width: 220px;
+font-size: 12px;
+
+}
